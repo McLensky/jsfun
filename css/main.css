@@ -9,11 +9,20 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400italic,900);
 
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 /*
@@ -95,18 +104,74 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html,
+body,
+.top,
+section,
+main {
+    height: 100%;
+}
 
+header {
+    background: #4CD4B0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
 
+.logo {
+    background: #FFFCE6;
+}
 
+h1 {
+    font-size: 3em;
+    font-weight: 900;
+}
 
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+    background: #FFFCE6;
+}
 
+.top {
+    background: url(../img/background.jpg) no-repeat;
+    background-size: cover;
+}
 
+.central-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
 
+section {
+    text-align: center;
+}
 
+#score-keeper {
+    background-color: #EDD834;
+}
+.score {
+    font-size: 5em;
+}
 
+#compare-that {
+    background: #F24D16;
+    color: #4CD4B0;
+}
 
+#light-switch{
+    background-color:white;
+}
 
-
+#dark {
+    background-color: black;
+    color: white;
+}
 
 
 
