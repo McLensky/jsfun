@@ -122,6 +122,16 @@ header {
 
 .logo {
     background: #FFFCE6;
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    margin-left: 2%;
+    font-size: 3em;
+    border-radius: 50%;
+    padding: 1em 0;
+    line-height: 1;
+    text-align: center;
+    color: blue;
 }
 
 h1 {
@@ -150,6 +160,7 @@ body {
 
 section {
     text-align: center;
+    padding-top: 9em;
 }
 
 #score-keeper {
@@ -173,7 +184,31 @@ section {
     color: white;
 }
 
+header ul li {
+    list-style-type: none;
+    margin: 1em;
+    padding: 1em;
+    display: inline;
+}
 
+header a {
+    color: white;
+}
+
+.mega-menu {
+    background: black;
+    color: white;
+    padding: 40px;
+    display: none;
+}
+
+.fadeHidden {
+    width: 200px;
+    height: 200px;
+    background: green;
+    display: none;
+    margin: 0 auto;
+}
 
 
 /* ==========================================================================
@@ -345,3 +380,4 @@ section {
         page-break-after: avoid;
     }
 }
+
